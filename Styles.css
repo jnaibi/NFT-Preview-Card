@@ -1,0 +1,117 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.panel {
+    width: 220px;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.picture {
+    width: 100%;
+    display: inline-block;
+    border-radius: 25px;
+
+}
+
+.picture img {
+    width: 100%;
+    display: inline-block;
+    /* padding: 20px 20px 0 20px; */
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: none;
+}
+
+.heading {
+    color: white;
+    font-size: 18px;
+    /* margin-left: 25px; */
+    text-align: left;
+    align-self: start;
+}
+
+.text {
+    color: rgb(150, 149, 149);
+
+    margin-top: 0;
+    align-self: start;
+    font-size: 12px;
+}
+
+.notes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-size: 13px;
+}
+
+.time {
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 12px;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.514);
+    margin: 10px 0;
+}
+
+.notes {
+    margin-bottom: 5px;
+}
+
+.developer-name {
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.name {
+    color: white;
+    font-size: 15px;
+}
+
+
+
+.attribution {
+    color: white;
+}
+
+.heading:hover,
+.name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.image:hover {
+    opacity: .5;
+}
+
+.picture:hover::after {
+    content: '';
+    background-color: blue;
+    /* background-image: url('images/icon-view.svg'); */
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 100;
+}
